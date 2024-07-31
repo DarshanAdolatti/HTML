@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animation
+        {
+            border: 2px solid red;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 10%;
+            height: 10%;
+            animation-name:anim;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anim
+        {
+            0%{
+                width: 50%;
+                height: 20%;
+                left: 5%;
+            }
+            30%{
+                background-color: chartreuse;
+                width: 10%;
+                height: 30%;
+            }
+            100%{
+                border-radius: 50%;
+                width: 50%;
+                height: 20%;
+                right: 10%;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div id="animation"></div>
+</body>
+</html>
